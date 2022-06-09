@@ -17,5 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [install]
     steps:
+      - uses: actions/checkout@v2
       - name: Testing using jest after installing packages
       - run: npm test
